@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Mendix</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="img/sipi.png" alt="Logo Mendix">
+    <h1 class="titulo-principal">Plataforma Mendix</h1>
+  </header>
+
+  <nav>
+    <a href="#" onclick="mostrarSeccion('mendix')">¿Qué es Mendix?</a>
+    <a href="#" onclick="mostrarSeccion('ventajas')">Ventajas</a>
+    <a href="#" onclick="mostrarSeccion('casos')">Casos de uso</a>
+    <a href="#" onclick="mostrarSeccion('recursos')">Recursos</a>
+    <a href="#" onclick="mostrarSeccion('desarrollador')">Desarrollador</a>
+  </nav>
+
+  <main>
+    <!-- Sección Mendix -->
+    <section id="mendix" class="active">
+      <h2>¿Qué es Mendix?</h2>
+      <p><strong>Mendix</strong> es una plataforma low-code para crear aplicaciones de manera rápida y colaborativa.
+         Permite a desarrolladores y usuarios del negocio construir soluciones digitales sin necesidad
+         de programar todo manualmente.</p>
+
+      <h3>Low-code</h3>
+      <p>Es un enfoque de desarrollo que combina interfaces gráficas con lógica de negocio para 
+         acelerar los ciclos de desarrollo y democratizar la creación de aplicaciones.</p>
+
+      <img src="img/descarga.png" alt="Imagen Mendix" class="imagen-section">
+      <video src="img/video.mp4" autoplay controls width="900" height="400"></video>
+
+    </section>
+
+    
+
+    <!-- Sección Ventajas -->
+    <section id="ventajas">
+      <h2>Ventajas de trabajar con Mendix</h2>
+      <ul>
+        <li><strong>Rapidez en el desarrollo:</strong> aplicaciones en menos tiempo que con programación tradicional.</li>
+        <li><strong>Colaboración:</strong> negocio y TI pueden trabajar juntos en un entorno visual.</li>
+        <li><strong>Escalabilidad:</strong> desde apps simples hasta soluciones empresariales complejas.</li>
+        <li><strong>Flexibilidad de despliegue:</strong> nube, on-premise o entornos híbridos.</li>
+        <li><strong>Ecosistema sólido:</strong> plantillas, componentes reutilizables, marketplace y soporte.</li>
+      </ul>
+      <img src="img/ventajas.jfif" alt="Imagen Ventajas" class="imagen-section">
+    </section>
+
+    <!-- Sección Casos -->
+    <section id="casos">
+      <h2>Casos de uso</h2>
+      <ul>
+        <li><a href="https://resources.sw.siemens.com/en-US/case-study-siemens-digital-industries-software-mendix" target="_blank">Siemens</a>: Digitalización de procesos industriales.</li>
+        <li><a href="https://www.mendix.com/customer-stories/enexis-tackles-industry-disruption-with-100-low-code-applications/" target="_blank">Enexis</a>: Gestión de redes de energía.</li>
+        <li><a href="https://www.mendix.com/press/innovation-as-a-daily-practice-is-key-to-achieving-digital-transformation/" target="_blank">PwC</a>: Soluciones personalizadas para clientes.</li>
+        <li><a href="https://iscap.us/proceedings/2018/pdf/4621.pdf" target="_blank">CareerValue</a>: Optimización de procesos de contratación.</li>
+        <li><a href="https://www.mxtechies.com/case-studies" target="_blank">Jobbird</a>: Plataforma de empleo escalable.</li>
+      </ul>
+      <img src="img/casos.jfif" alt="Imagen Casos" class="imagen-section">
+    </section>
+
+    <!-- Sección Recursos -->
+    <section id="recursos">
+      <h2>Recursos de aprendizaje</h2>
+      <ul>
+        <li><a href="https://academy.mendix.com/link/home" target="_blank">Mendix Academy</a>: Cursos oficiales gratuitos y certificaciones.</li>
+        <li><a href="https://docs.mendix.com" target="_blank">Documentación oficial</a>: Guías paso a paso y referencia.</li>
+        <li><a href="https://www.youtube.com/channel/UCM8pMKzsNP9sQ0IoANQ7FBg" target="_blank">YouTube - Canal Mendix</a>: Tutoriales visuales y demostraciones.</li>
+        <li><a href="https://forum.mendix.com/" target="_blank">Foro de la comunidad</a>: Preguntas, respuestas y consejos.</li>
+        <li><a href="https://marketplace.mendix.com" target="_blank">Marketplace de Mendix</a>: Componentes y ejemplos reutilizables.</li>
+      </ul>
+      <img src="img/descarga.jfif" alt="Imagen Recursos" class="imagen-section">
+    </section>
+
+    <!-- Sección Desarrollador -->
+    <section id="desarrollador">
+      <h2>Datos del Desarrollador</h2>
+      <img src="img/tu-foto.jpeg" alt="Foto del desarrollador" class="foto-dev">
+      <p><strong>Nombre:</strong> Josthyn Daniel Rodríguez de Jesús</p>
+      <p><strong>Carrera:</strong> Ingeniería en Tecnologías de la Información e Innovación Digital</p>
+      <p><strong>Correo:</strong> 122410419jdrj@gmail.com</p>
+      <p><strong>Descripción:</strong> Estudiante apasionado por la creación digital y la tecnología.</p>
+    </section>
+  </main>
+
+  <script>
+    function mostrarSeccion(id){
+      document.querySelectorAll("section").forEach(sec=>sec.classList.remove("active"));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
+
