@@ -1,0 +1,277 @@
+<!-- modulo2.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Módulo 2 - Rapid Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/sipi.png" alt="Logo Mendix" width="40" height="40" class="me-2">
+        Rapid Developer
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html#hero">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#aprender">Qué aprenderás</a></li>
+
+          <!-- Dropdown de Módulos -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="modulosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Módulos
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="modulosDropdown">
+              <li><a class="dropdown-item" href="modulo1.html">Módulo 1: Introducción</a></li>
+              <li><a class="dropdown-item" href="modulo2.html">Módulo 2: ALM & Agile</a></li>
+              <li><a class="dropdown-item" href="modulo3.html">Módulo 3</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="index.html#recursos">Recursos</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Módulo 2 -->
+  <section id="modulo2" class="container my-5">
+    <h2 class="mb-4">Módulo 2: Application Lifecycle Management y trabajo Agile</h2>
+    <p class="lead">En este módulo aprenderás a gestionar el ciclo de vida de una aplicación (ALM), trabajar en Agile con Scrum, crear equipo y empezar sprints y user stories para el caso práctico <strong>LearnNow</strong>.</p>
+
+    <!-- 2.1 Objetivos -->
+    <div class="mb-4">
+      <h4>2.1 Objetivos de aprendizaje</h4>
+      <p>Al finalizar este módulo serás capaz de:</p>
+      <ul>
+        <li>Describir qué es Application Lifecycle Management (ALM).</li>
+        <li>Crear una nueva aplicación en Mendix.</li>
+        <li>Entender la metodología Agile y sus beneficios frente a modelos tradicionales.</li>
+        <li>Definir los roles clave de un equipo Scrum.</li>
+        <li>Identificar e invitar a los miembros del equipo en Mendix.</li>
+        <li>Explicar la importancia de las historias de usuario y cómo gestionarlas (epics, backlog, sprint).</li>
+        <li>Crear un wireframe y organizar historias en epics y sprints.</li>
+      </ul>
+    </div>
+
+    <!-- 2.2 ALM -->
+    <div class="mb-4">
+      <h4>2.2 ¿Qué es Application Lifecycle Management (ALM)?</h4>
+      <p>ALM es la gestión integrada del ciclo de vida de una app: personas, procesos y herramientas que acompañan la app desde la idea hasta su retirada. Mendix soporta todas las fases, fomentando iteración rápida y colaboración entre negocio y TI.</p>
+
+      <h6>Fases típicas</h6>
+      <ul>
+        <li><strong>Capture:</strong> ideación y recopilación de requisitos (p. ej. Buzz para brainstorms y decisiones).</li>
+        <li><strong>Develop:</strong> construcción en Studio Pro con control de versiones y colaboración (Team Server, Portal).</li>
+        <li><strong>Deploy:</strong> despliegue con un clic para probar o publicar la app en dispositivos.</li>
+        <li><strong>Iterate / Feedback:</strong> feedback desde la app que retroalimenta nuevas ideas → vuelve a Capture.</li>
+      </ul>
+
+      <p>La fortaleza de Mendix es que no solo despliega: soporta todo el bucle, permitiendo experimentación rápida y entregas frecuentes.</p>
+    </div>
+
+    <!-- 2.3 Caso de uso: LearnNow -->
+    <div class="mb-4">
+      <h4>2.3 Nuestro caso: LearnNow (problema y solución)</h4>
+      <p><strong>El problema:</strong> Jimmy gestiona cursos con Excel; al crecer la empresa pierde visibilidad y control sobre cursos y participantes.</p>
+      <p><strong>La solución:</strong> crear una app para registrar participantes, cursos y programaciones; agenda para entrenadores; y vistas claras para administradores, profesores y alumnos. Para ello aplicaremos ALM y Agile, y Jimmy pide ayuda para crear el proyecto.</p>
+      <p>Consejo recibido: trabajar en Agile, definir requisitos claros y sumar a un diseñador UX desde el inicio.</p>
+    </div>
+
+    <!-- 2.4 Crear nueva app -->
+    <div class="mb-4">
+      <h4>2.4 Crear una nueva aplicación (resumen de pasos)</h4>
+      <ol>
+        <li>Instalar Mendix Studio Pro (usar la versión recomendada por el curso).</li>
+        <li>En Studio Pro: <em>Create New App</em> → elegir <strong>Blank Web App</strong> como punto de partida.</li>
+        <li>Proveer nombre, descripción e icono descriptivo → Click <em>Create App</em>.</li>
+        <li>Abrir el Project Dashboard (arriba a la derecha en Studio Pro) para ver la app en el Mendix Portal.</li>
+        <li>En el portal, hacer clic en el nombre de la app para ver el <strong>Project Buzz</strong> (timeline del proyecto).</li>
+      </ol>
+      <p>Estos pasos te arrancan el proyecto y conectan las fases ALM con el Portal de Mendix.</p>
+    </div>
+
+    <!-- 2.5 Explorar el Buzz -->
+    <div class="mb-4">
+      <h4>2.5 Explorar el Project Buzz</h4>
+      <p>El Project Buzz es la línea de tiempo del proyecto: registra actividad (subidas, discusiones, decisiones). Es distinto del Company Buzz (comunicaciones a nivel empresa). Es útil para documentar el proceso y compartir avances con el equipo.</p>
+    </div>
+
+    <!-- 2.6 Metodología de proyecto -->
+    <div class="mb-4">
+      <h4>2.6 Metodología: ¿Waterfall vs Agile?</h4>
+      <p>Waterfall (tradicional) planifica requisitos al inicio y ejecuta a largo plazo; esto es riesgoso si cambian las necesidades. Agile prioriza ciclos cortos, iteraciones frecuentes y colaboración continua.—Mendix está pensado para Agile.</p>
+      <p>Agile es un término paraguas (Scrum, Kanban, XP). <strong>Scrum</strong> es el más utilizado y es el que usaremos: se basa en ciclos (sprints), roles claros y feedback continuo.</p>
+    </div>
+
+    <!-- 2.7 Roles de la aplicación / Scrum -->
+    <div class="mb-4">
+      <h4>2.7 Roles en Scrum (roles de la app)</h4>
+      <p>Equipos pequeños y cross-functional mejoran comunicación y velocidad. Roles principales:</p>
+      <ul>
+        <li><strong>Product Owner:</strong> define visión, prioriza requisitos y representa stakeholders.</li>
+        <li><strong>Scrum Master:</strong> facilita el proceso, elimina impedimentos y optimiza el flujo.</li>
+        <li><strong>Development Team:</strong> quienes construyen la app (ingenieros, diseñadores, testers).</li>
+      </ul>
+      <p>Otros roles en Mendix: Performance Engineer / Tester y Application Operator (monitorizan o despliegan) y End User (stakeholders que pueden participar en ideación sin editar la app).</p>
+    </div>
+
+    <!-- 2.8 Formar equipo en Mendix -->
+    <div class="mb-4">
+      <h4>2.8 Formar el equipo en Mendix</h4>
+      <p>Jimmy decide invitar a dos colegas y los incorpora al proyecto. En Mendix, los desarrolladores suelen llamarse <em>Business Engineers</em>. El Scrum Master frecuentemente tiene permisos administrativos dentro del app project.</p>
+      <p>Tareas en el Portal: invitar miembros, asignar roles, eliminar usuarios y gestionar permisos desde la pestaña <strong>Team</strong>.</p>
+    </div>
+
+    <!-- 2.9 Invitar miembros -->
+    <div class="mb-4">
+      <h4>2.9 Invitar miembros al proyecto</h4>
+      <p>Pasos rápidos para invitar:</p>
+      <ol>
+        <li>Clic en <strong>Invite New Member</strong> (botón azul, arriba a la derecha).</li>
+        <li>Agregar al menos una dirección de correo corporativa o educativa (se envía confirmación).</li>
+        <li>Seleccionar el rol para cada miembro y hacer <strong>Add</strong>, revisar y enviar invitaciones.</li>
+      </ol>
+      <p>Las invitaciones aparecen en la bandeja del invitado y en <em>Pending Invites</em> hasta que acepten.</p>
+    </div>
+
+    <!-- 2.10 Historias de usuario -->
+    <div class="mb-4">
+      <h4>2.10 Historias de usuario (user stories)</h4>
+      <p>Las historias de usuario traducen necesidades en ítems de trabajo. Se organizan en <strong>epics</strong> (grupos grandes) y van al <strong>product backlog</strong>. El Product Owner prioriza el backlog y el equipo selecciona historias por sprint.</p>
+      <p>Plantilla simple de historia:</p>
+      <blockquote class="blockquote">
+        <p class="mb-0"><em>Como [tipo de usuario], quiero [acción], para [valor de negocio].</em></p>
+      </blockquote>
+      <p>En Scrum no se asignan horas por historia: se usa un timebox (sprint). Si una historia no se termina en el sprint, se mueve al siguiente.</p>
+    </div>
+
+    <!-- 2.11 Historia de usuario de Jimmy -->
+    <div class="mb-4">
+      <h4>2.11 Ejemplo: Historias de Jimmy (LearnNow)</h4>
+      <p><strong>Usuarios:</strong> administrador (Jimmy), profesores, estudiantes.</p>
+      <p><strong>Necesidades / valor:</strong> mantener cursos actualizados, gestionar participantes, asignar profesores, ver calendario y contactar participantes.</p>
+      <p><strong>Historias extraídas:</strong></p>
+      <ul>
+        <li>Como administrador, quiero añadir un nuevo curso, para mantener el catálogo actualizado.</li>
+        <li>Como administrador, quiero editar un curso, para corregir datos o fechas.</li>
+        <li>Como profesor, quiero ver el email de cada participante, para enviar certificados o notificaciones.</li>
+      </ul>
+    </div>
+
+    <!-- 2.12 Crear wireframe -->
+    <div class="mb-4">
+      <h4>2.12 Crear un wireframe</h4>
+      <p>Un wireframe es un boceto simple que define las pantallas y componentes que tendrá la app. No necesita ser perfecto; puede ser en papel o en cualquier herramienta. Jimmy y su equipo hicieron varias propuestas para la página principal (menú → vista de cursos → añadir curso).</p>
+      <p>Consejo: guarda el wireframe en la pestaña <strong>Documents</strong> del proyecto para que quede disponible durante el desarrollo.</p>
+    </div>
+
+    <!-- 2.13 Actividades prácticas: crear wireframes -->
+    <div class="mb-4">
+      <h4>2.13 Actividad: Diseña 4 alternativas para la homepage</h4>
+      <p>Dobla una hoja en 4 y dibuja cuatro variantes. Pregúntate:</p>
+      <ul>
+        <li>¿Qué elementos son imprescindibles en la homepage?</li>
+        <li>¿Cuál es la forma más simple de mostrarlos?</li>
+      </ul>
+      <p>Comparte tus diseños en Documents para feedback del equipo.</p>
+    </div>
+
+    <!-- 2.14 Epics, Board y Planning -->
+    <div class="mb-4">
+      <h4>2.14 Epics, Board y Planning</h4>
+      <p><strong>Board:</strong> muestra el estado del Active Sprint con swimlanes (To Do / In Progress / Done).</p>
+      <p><strong>Planning:</strong> se divide en Active Sprint, Next Sprint, Refinement y Backlog —aquí organizas y preparas historias para los sprints.</p>
+      <p><strong>Epics:</strong> agrupan historias; facilitan priorizar por funcionalidades o por tipo de usuario.</p>
+      <p><strong>Archive:</strong> al terminar un sprint, las historias completadas van al archivo para llevar historial.</p>
+    </div>
+
+    <!-- 2.15 Añadir historias y puntos de historia -->
+    <div class="mb-4">
+      <h4>2.15 Añadir historias de usuario</h4>
+      <p>Crear historias desde <em>Board</em> o <em>Planning</em> con <strong>Create Story</strong>. Completa título, descripción y asigna puntos de historia (se recomienda usar la serie de Fibonacci) para estimar esfuerzo.</p>
+      <p>Divide las historias en tareas para que los desarrolladores sepan los pasos a seguir.</p>
+    </div>
+
+    <!-- 2.16 Ejercicio: añade tu primera historia -->
+    <div class="mb-4">
+      <h4>2.16 Ejercicio: Añade tu primera historia</h4>
+      <p>Ejemplo a crear en la app:</p>
+      <ul>
+        <li><strong>Título:</strong> As an administrator, I want to import my list of user stories into Mendix, so that I can see and share progress with my team.</li>
+        <li><strong>Tipo:</strong> Feature</li>
+        <li><strong>Puntos:</strong> añade una estimación (usar Fibonacci).</li>
+        <li><strong>Descripción:</strong> describe claramente qué debe permitir la historia.</li>
+      </ul>
+      <p>Guárdala en el backlog; la necesitaremos para ejercicios posteriores.</p>
+    </div>
+
+    <!-- 2.17 Recursos e importación -->
+    <div class="mb-4">
+      <h4>2.17 Recursos para este módulo</h4>
+      <p>En el material del curso se incluye un Excel con historias predefinidas para importar:</p>
+      <ul>
+        <li><strong>LearnNow User Stories (Excel)</strong> — descárgalo desde la pestaña Resources del curso.</li>
+        <li>En el Portal: Planning → menú [· · ·] junto a <em>Create Story</em> → <strong>Import Stories</strong> → sube el archivo Excel.</li>
+      </ul>
+      <p>Tras la importación revisa las historias y muévelas a Next Sprint cuando estén listas para planificar.</p>
+    </div>
+
+    <!-- 2.18 Crear Epics (ejercicio) -->
+    <div class="mb-4">
+      <h4>2.18 Crear Epics (actividad)</h4>
+      <p>Jimmy crea tres epics para organizar las historias:</p>
+      <ul>
+        <li>Essential Business Functions</li>
+        <li>Automations</li>
+        <li>Validation and Security</li>
+      </ul>
+      <p>Asigna cada historia a su epic correspondiente desde las propiedades de la historia.</p>
+    </div>
+
+    <!-- 2.19 Iniciar un sprint -->
+    <div class="mb-4">
+      <h4>2.19 Iniciar un nuevo Sprint</h4>
+      <p>Para empezar un sprint:</p>
+      <ol>
+        <li>Mover historias de Backlog a Next Sprint.</li>
+        <li>En Planning, abrir el menú [· · ·] y seleccionar <strong>Start Sprint</strong>.</li>
+        <li>Definir el nombre del sprint y el Sprint Goal.</li>
+        <li>Tras iniciar, las historias pasan a Active Sprint y aparecen en el Board.</li>
+      </ol>
+      <p>Durante el sprint el Scrum Master puede editar la duración o el objetivo; evita añadir historias a mitad del sprint para no cambiar su alcance.</p>
+    </div>
+
+    <!-- 2.20 Resumen -->
+    <div class="mb-4">
+      <h4>2.20 Resumen</h4>
+      <p>En este módulo aprendiste a usar Mendix para soportar todo el ciclo de vida de una app (ALM), trabajar en Agile con Scrum, formar un equipo, crear historias de usuario, agruparlas en epics y arrancar sprints. Con el caso LearnNow llevas estas prácticas a una app real.</p>
+      <p>¿Listo para pasar al módulo de construcción? Haz clic en el siguiente módulo cuando quieras empezar a desarrollar.</p>
+    </div>
+
+    <!-- 2.21 Verificación de conocimientos -->
+    <div class="mb-4">
+      <h4>2.21 Verificación de conocimientos</h4>
+      <p>Ejemplos de preguntas (con respuesta correcta):</p>
+      <ul>
+        <li><strong>Pregunta 1:</strong> ¿Puedes crear una nueva app desde el Mendix Portal? — <em>Verdadero</em>.</li>
+        <li><strong>Pregunta 2:</strong> Si un equipo Scrum queda atascado por causas externas, ¿quién debe eliminar los impedimentos? — <em>El Scrum Master</em>.</li>
+        <li><strong>Pregunta 3:</strong> Un factor crítico de éxito para empresas que usan Mendix es: — <em>Trabajar en equipos pequeños y cross-functional</em>.</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

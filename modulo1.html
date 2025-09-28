@@ -1,0 +1,122 @@
+<!-- modulo1.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo 1 - Rapid Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/sipi.png" alt="Logo Mendix" width="40" height="40" class="me-2">
+        Rapid Developer
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html#hero">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#aprender">Qué aprenderás</a></li>
+          <!-- Dropdown de Módulos -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="modulosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Módulos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="modulosDropdown">
+              <li><a class="dropdown-item" href="modulo1.html">Módulo 1: Introducción</a></li>
+              <li><a class="dropdown-item" href="modulo2.html">Módulo 2</a></li>
+              <li><a class="dropdown-item" href="modulo3.html">Módulo 3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html#recursos">Recursos</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Módulo 1 -->
+  <section id="modulo1" class="container my-5">
+    <h2 class="mb-4">Módulo 1: Introducción a Become a Rapid Developer</h2>
+    <p class="lead">
+      Aquí tienes un repaso de todos los subtemas vistos en el primer módulo de la ruta de aprendizaje
+      <strong>Become a Rapid Developer</strong>.
+    </p>
+
+    <div class="mb-4">
+      <h4>1.1 ¡Bienvenido!</h4>
+      <p>
+        ¡Bienvenido a la ruta de aprendizaje Rapid Developer! Aquí aprenderás a construir aplicaciones con la plataforma Mendix, sin importar tu experiencia previa.
+      </p>
+      <p>Al finalizar serás capaz de:</p>
+      <ul>
+        <li>Describir los componentes de la plataforma Mendix.</li>
+        <li>Configurar tu perfil en la Comunidad Mendix.</li>
+        <li>Colaborar con tu equipo en la plataforma.</li>
+        <li>Usar Studio Pro: crear páginas, modelos de datos, asociaciones y microflows.</li>
+        <li>Automatizar procesos, validar datos y asegurar tu app.</li>
+      </ul>
+      <p>
+        Al completar el camino podrás presentar el examen para obtener el <strong>Rapid Developer Certificate</strong>, con 50 preguntas de opción múltiple.
+      </p>
+    </div>
+
+    <div class="mb-4">
+      <h4>1.2 La interfaz de la Academia</h4>
+      <p>La interfaz de la Academy es intuitiva y visual. Incluye:</p>
+      <ul>
+        <li><strong>Teoría:</strong> conceptos explicados con ejemplos.</li>
+        <li><strong>Práctica:</strong> ejercicios paso a paso para afianzar conocimientos.</li>
+        <li><strong>Summary:</strong> repaso al final de cada módulo.</li>
+        <li><strong>Knowledge Check:</strong> autoevaluaciones que no afectan la certificación.</li>
+        <li><strong>Recursos:</strong> apps de ejemplo, archivos descargables y solución final.</li>
+        <li><strong>Feedback:</strong> botón para enviar sugerencias y encuestas.</li>
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <h4>1.3 Ecosistemas de Mendix</h4>
+      <p>El ecosistema de Mendix ofrece diversas herramientas para construir y gestionar tus apps:</p>
+      <ul>
+        <li><strong>Gestión de proyectos online:</strong> Mendix Portal para crear apps y colaborar.</li>
+        <li><strong>Marketplace:</strong> descargas de Studio Pro, widgets y módulos.</li>
+        <li><strong>Atlas UI:</strong> bloques y widgets para un diseño atractivo.</li>
+        <li><strong>Mendix Studio Pro:</strong> editor principal con interfaz WYSIWYG.</li>
+        <li><strong>Catálogo:</strong> fuentes de datos centralizadas entre aplicaciones.</li>
+        <li><strong>Soporte:</strong> ayuda en caso de fallos técnicos.</li>
+        <li><strong>Comunidad Mendix:</strong> espacio para resolver dudas y proponer ideas.</li>
+        <li><strong>Documentación:</strong> referencia completa y guías.</li>
+        <li><strong>Academy:</strong> rutas de aprendizaje y cursos de todos los niveles.</li>
+      </ul>
+      <p><a href="https://marketplace.mendix.com/link/studiopro/" target="_blank" class="btn btn-outline-primary">Descargar Mendix Studio Pro</a></p>
+      <p><a href="https://community.mendix.com/" target="_blank" class="btn btn-outline-secondary">Configurar Perfil en Mendix Community</a></p>
+    </div>
+
+    <div class="mb-4">
+      <h4>1.4 Resumen</h4>
+      <p>
+        ¡Felicidades! Al completar este módulo conociste la interfaz de Academy, exploraste el ecosistema Mendix y configuraste tu entorno de trabajo.
+        Tu progreso en el módulo de introducción está casi al 100%.
+      </p>
+    </div>
+
+    <div class="mb-4">
+      <h4>1.5 Verificación de conocimientos</h4>
+      <p>Ejemplo de preguntas y respuestas:</p>
+      <ul>
+        <li><strong>¿Qué es Mendix Studio Pro?</strong> → Una herramienta para crear, desarrollar y desplegar aplicaciones rápidamente.</li>
+        <li><strong>¿Se puede compartir contenido en el Marketplace solo dentro de la empresa?</strong> → Sí.</li>
+        <li><strong>¿Dónde puedes hacer preguntas y enviar ideas de nuevas funciones?</strong> → En la Comunidad Mendix.</li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

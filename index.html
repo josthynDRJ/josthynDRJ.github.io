@@ -1,100 +1,136 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página Mendix</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rapid Developer - Inicio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <img src="img/sipi.png" alt="Logo Mendix">
-    <h1 class="titulo-principal">Plataforma Mendix</h1>
-  </header>
+<body class="bg-light">
 
-  <nav>
-    <a href="#" onclick="mostrarSeccion('mendix')">¿Qué es Mendix?</a>
-    <a href="#" onclick="mostrarSeccion('ventajas')">Ventajas</a>
-    <a href="#" onclick="mostrarSeccion('casos')">Casos de uso</a>
-    <a href="#" onclick="mostrarSeccion('recursos')">Recursos</a>
-    <a href="#" onclick="mostrarSeccion('desarrollador')">Desarrollador</a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/sipi.png" alt="Logo Mendix" width="40" height="40" class="me-2">
+        Rapid Developer
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#aprender">Qué aprenderás</a></li>
+
+          <!-- Dropdown de Módulos -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="modulosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Módulos
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="modulosDropdown">
+              <li><a class="dropdown-item" href="modulo1.html">Módulo 1: Introducción</a></li>
+              <li><a class="dropdown-item" href="modulo2.html">Módulo 2: Colabora con tu equipo</a></li>
+              <li><a class="dropdown-item" href="modulo3.html">Módulo 3: Comienza a construir tu aplicación</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="#recursos">Recursos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+
+        <a class="btn btn-primary ms-lg-3" href="#aprender">Entrar a Academy</a>
+      </div>
+    </div>
   </nav>
 
-  <main>
-    <!-- Sección Mendix -->
-    <section id="mendix" class="active">
-      <h2>¿Qué es Mendix?</h2>
-      <p><strong>Mendix</strong> es una plataforma low-code para crear aplicaciones de manera rápida y colaborativa.
-         Permite a desarrolladores y usuarios del negocio construir soluciones digitales sin necesidad
-         de programar todo manualmente.</p>
+  <!-- Hero -->
+  <section id="hero" class="py-5 bg-primary text-white text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Rapid Developer Course</h1>
+      <p class="lead">Aprende a usar Mendix y empieza a crear aplicaciones increíbles, paso a paso.</p>
+      <img src="img/casos.jfif" alt="Ilustración Mendix" class="img-fluid mt-4 rounded shadow-sm" style="max-height: 300px;">
+    </div>
+  </section>
 
-      <h3>Low-code</h3>
-      <p>Es un enfoque de desarrollo que combina interfaces gráficas con lógica de negocio para 
-         acelerar los ciclos de desarrollo y democratizar la creación de aplicaciones.</p>
+  <!-- Qué aprenderás -->
+  <section id="aprender" class="container my-5">
+    <h2 class="mb-4">Qué aprenderás</h2>
+    <p>Este curso te ayudará a familiarizarte con Mendix y empezar a construir tus primeras aplicaciones de manera sencilla y rápida.</p>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Familiarizarte con la interfaz de Mendix Academy</li>
+      <li class="list-group-item">Configurar tu perfil en Mendix Community</li>
+      <li class="list-group-item">Descargar e instalar Mendix Studio Pro</li>
+      <li class="list-group-item">Entender los elementos principales de la plataforma Mendix</li>
+      <li class="list-group-item">Iniciar tu primera aplicación en Mendix Studio Pro</li>
+    </ul>
+  </section>
 
-      <img src="img/descarga.png" alt="Imagen Mendix" class="imagen-section">
-      <video src="img/video.mp4" autoplay controls width="900" height="400"></video>
+  <!-- Recursos -->
+  <section id="recursos" class="container my-5">
+    <h2 class="mb-4">Recursos útiles</h2>
+    <p>Estos recursos te ayudarán a profundizar en lo que aprendiste:</p>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/doc.png" class="card-img-top" alt="Documentación (opcional)">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Documentación</h5>
+            <p class="card-text flex-grow-1">Guía completa de Mendix y referencias rápidas para aprender paso a paso.</p>
+            <a class="btn btn-primary mt-2" href="https://docs.mendix.com/" target="_blank">Ver Documentación</a>
+          </div>
+        </div>
+      </div>
 
-    </section>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/tips.png" class="card-img-top" alt="Tips (opcional)">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Tips</h5>
+            <p class="card-text flex-grow-1">Consejos prácticos para aprovechar mejor la plataforma Mendix.</p>
+            <a class="btn btn-primary mt-2" href="#aprender">Ver Tips</a>
+          </div>
+        </div>
+      </div>
 
-    
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/support.png" class="card-img-top" alt="Soporte (opcional)">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Soporte</h5>
+            <p class="card-text flex-grow-1">Contacta con el equipo de soporte de Mendix si tienes dudas o problemas.</p>
+            <a class="btn btn-primary mt-2" href="#contacto">Contactar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Sección Ventajas -->
-    <section id="ventajas">
-      <h2>Ventajas de trabajar con Mendix</h2>
-      <ul>
-        <li><strong>Rapidez en el desarrollo:</strong> aplicaciones en menos tiempo que con programación tradicional.</li>
-        <li><strong>Colaboración:</strong> negocio y TI pueden trabajar juntos en un entorno visual.</li>
-        <li><strong>Escalabilidad:</strong> desde apps simples hasta soluciones empresariales complejas.</li>
-        <li><strong>Flexibilidad de despliegue:</strong> nube, on-premise o entornos híbridos.</li>
-        <li><strong>Ecosistema sólido:</strong> plantillas, componentes reutilizables, marketplace y soporte.</li>
-      </ul>
-      <img src="img/ventajas.jfif" alt="Imagen Ventajas" class="imagen-section">
-    </section>
+  <!-- Contacto / Footer -->
+  <section id="contacto" class="bg-dark text-white py-5">
+    <div class="container text-center">
+      <h2>Contacto</h2>
+      <p>¿Tienes dudas o necesitas ayuda? Comunícate con nosotros por correo o redes sociales.</p>
+      <p>Email: soporte@mendix.com | Tel: +52 55 1234 5678</p>
+    </div>
+  </section>
 
-    <!-- Sección Casos -->
-    <section id="casos">
-      <h2>Casos de uso</h2>
-      <ul>
-        <li><a href="https://resources.sw.siemens.com/en-US/case-study-siemens-digital-industries-software-mendix" target="_blank">Siemens</a>: Digitalización de procesos industriales.</li>
-        <li><a href="https://www.mendix.com/customer-stories/enexis-tackles-industry-disruption-with-100-low-code-applications/" target="_blank">Enexis</a>: Gestión de redes de energía.</li>
-        <li><a href="https://www.mendix.com/press/innovation-as-a-daily-practice-is-key-to-achieving-digital-transformation/" target="_blank">PwC</a>: Soluciones personalizadas para clientes.</li>
-        <li><a href="https://iscap.us/proceedings/2018/pdf/4621.pdf" target="_blank">CareerValue</a>: Optimización de procesos de contratación.</li>
-        <li><a href="https://www.mxtechies.com/case-studies" target="_blank">Jobbird</a>: Plataforma de empleo escalable.</li>
-      </ul>
-      <img src="img/casos.jfif" alt="Imagen Casos" class="imagen-section">
-    </section>
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-1">&copy; 2025 Rapid Developer Course. Todos los derechos reservados.</p>
+    <p class="mb-0">
+      <a href="#" class="text-white me-3">Política de Privacidad</a>
+      <a href="#" class="text-white me-3">Términos y Condiciones</a>
+      <a href="#" class="text-white">Redes Sociales</a>
+    </p>
+  </footer>
 
-    <!-- Sección Recursos -->
-    <section id="recursos">
-      <h2>Recursos de aprendizaje</h2>
-      <ul>
-        <li><a href="https://academy.mendix.com/link/home" target="_blank">Mendix Academy</a>: Cursos oficiales gratuitos y certificaciones.</li>
-        <li><a href="https://docs.mendix.com" target="_blank">Documentación oficial</a>: Guías paso a paso y referencia.</li>
-        <li><a href="https://www.youtube.com/channel/UCM8pMKzsNP9sQ0IoANQ7FBg" target="_blank">YouTube - Canal Mendix</a>: Tutoriales visuales y demostraciones.</li>
-        <li><a href="https://forum.mendix.com/" target="_blank">Foro de la comunidad</a>: Preguntas, respuestas y consejos.</li>
-        <li><a href="https://marketplace.mendix.com" target="_blank">Marketplace de Mendix</a>: Componentes y ejemplos reutilizables.</li>
-      </ul>
-      <img src="img/descarga.jfif" alt="Imagen Recursos" class="imagen-section">
-    </section>
-
-    <!-- Sección Desarrollador -->
-    <section id="desarrollador">
-      <h2>Datos del Desarrollador</h2>
-      <img src="img/tu-foto.jpeg" alt="Foto del desarrollador" class="foto-dev">
-      <p><strong>Nombre:</strong> Josthyn Daniel Rodríguez de Jesús</p>
-      <p><strong>Carrera:</strong> Ingeniería en Tecnologías de la Información e Innovación Digital</p>
-      <p><strong>Correo:</strong> 122410419jdrj@gmail.com</p>
-      <p><strong>Descripción:</strong> Estudiante apasionado por la creación digital y la tecnología.</p>
-    </section>
-  </main>
-
-  <script>
-    function mostrarSeccion(id){
-      document.querySelectorAll("section").forEach(sec=>sec.classList.remove("active"));
-      document.getElementById(id).classList.add('active');
-    }
-  </script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
